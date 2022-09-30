@@ -53,25 +53,25 @@ published: true
 
    - 이때 아직 Mesh Pro는 다룰 단계가 아니기 때문에 Legacy에 있는 Text를 사용했다.
 
-     <br>
+
 
 2. Text를 Score: 로 표시하고 위치를 화면의 우측 상단에 위치시키기 위해 Rect Transform에서 alt + shift 를 누르고 위치를 지정한다.
 
 ![image-20220930141312769](/assets/images/2022-09-30-GMSettings3/image-20220930141312769.png)
 
-<br>
+
 
 3. 이후 텍스트와 폰트 사이즈를 조절해준다.
 
 ![image-20220930140845418](/assets/images/2022-09-30-GMSettings3/image-20220930140845418.png)
 
-<br>
+
 
 > **Horizontal Overflow**: 글자가 만약 상자의 수평(좌우)의 크기를 넘었을 때 어떻게 처리할 것인지 처리 
 >
 > **Vertical OverFlow**: 글자가 만약 상자의 수직(상하)의 크기를 넘었을 때 어떻게 처리할 것인지 처리
 
-<br>
+
 
 4. 이제 스크립트를 작성해보자.
 
