@@ -21,14 +21,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Unreal" %}
-                        <li><a href="/categories/unreal" class="">Unreal ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">Programming Language</span>
+        <span class="nav__sub-title">Programming Language </span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
