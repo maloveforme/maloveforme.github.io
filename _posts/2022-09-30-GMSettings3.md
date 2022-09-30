@@ -57,13 +57,13 @@ published: true
 
 2. Text를 Score: 로 표시하고 위치를 화면의 우측 상단에 위치시키기 위해 Rect Transform에서 alt + shift 를 누르고 위치를 지정한다.
 
-![image-20220930141312769](../assets/images/2022-09-30-GMSettings3/image-20220930141312769.png)
+![image-20220930141312769](/assets/images/2022-09-30-GMSettings3/image-20220930141312769.png)
 
 <br>
 
 3. 이후 텍스트와 폰트 사이즈를 조절해준다.
 
-![image-20220930140845418](../assets/images/2022-09-30-GMSettings3/image-20220930140845418.png)
+![image-20220930140845418](/assets/images/2022-09-30-GMSettings3/image-20220930140845418.png)
 
 <br>
 
