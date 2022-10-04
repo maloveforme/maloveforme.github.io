@@ -3,14 +3,12 @@
 title: "GameManager Settings(4)"
 layout: single
 categories:
-
   - Unity
-  tags:
+tags:
   - Unity
   - Unity2DGame
 
 published: true
-
 ---
 
 
