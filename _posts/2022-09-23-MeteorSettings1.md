@@ -5,8 +5,8 @@ layout: single
 categories:
   - Unity
 tags:
-  - Unity
   - Unity2DGame
+  - 2022
 ---
 ### Asset Store 이용
 - Asset store에서 Import한 Asset은 Windows -> Package Manager -> My Asset에서 확인할 수 있다.

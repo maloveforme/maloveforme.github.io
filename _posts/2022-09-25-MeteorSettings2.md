@@ -5,12 +5,12 @@ layout: single
 categories:
   - Unity
 tags:
-  - Unity
   - Unity2DGame
+  - 2022
 ---
-  
+
 ### 운석 프리팹(Prefabs) 생성
-  
+
 **1. 맵의 랜덤한 위치에서 생성된 운석을 만들기 위해 프리팹을 활용한다.**
 
 > Prefab: GameObject, Component, Property를  Asset의 형태로 저장하는 것

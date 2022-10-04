@@ -7,9 +7,8 @@ categories:
   - Unity
 
 tags:
-
-  - Unity
   - Unity2DGame
+  - 2022
 
 published: true
 

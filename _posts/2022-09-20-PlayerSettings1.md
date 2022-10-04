@@ -4,17 +4,17 @@ layout: single
 categories:
   - Unity
 tags:
-  - Unity
   - Unity2DGame
+  - 2022
 ---
 
 ### 해상도 설정하기
   - 해상도 720 * 1280 으로 설정
 
   ![Display](/assets/images/2022_Display.png)
-  
+
 ---
-  
+
 ### 플레이어 생성
 
   1. Asset store에서 비행기 찾아서 Resource 폴더에 임포트
@@ -25,16 +25,16 @@ tags:
 
   출처: https://assetstore.unity.com/packages/2d/characters/pixel-art-space-ship-part-1-228832
 
-  ---
+---
 
 ### 플레이어 이동
   1. Scripts 폴더에 Player 스크립트 생성
   2. Player는 중력의 영향을 받지 않는 Kinematics 상태로 설정하고
-  움직임을 위해 Rigidbody2D, 충돌과 관련된 Collision 컴포넌트 추가
+    움직임을 위해 Rigidbody2D, 충돌과 관련된 Collision 컴포넌트 추가
 
   ![Player_Component](/assets/images/2022_Player_Component.png)
 
-  ---
+---
 
 ### Player의 움직임을 상하좌우로 움직이게 하기 위해 다음과 같은 문법을 차용
 
@@ -62,7 +62,7 @@ tags:
   ```
 
   + 이때 상하좌우에 대한 정보는 유니티의 Edit -> Project Settings -> Input Manager -> Axes 에서
-  조정할 수 있다.  그리고 각 component를 클릭하면 호출하는 키를 알 수 있다.
+    조정할 수 있다.  그리고 각 component를 클릭하면 호출하는 키를 알 수 있다.
 
   > Input.GetAxis(string name): -1부터 1까지의 값을 반환. 부드러운 움직임 구현 가능
   > 

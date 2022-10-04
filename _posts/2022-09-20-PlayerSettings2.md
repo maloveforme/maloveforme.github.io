@@ -5,8 +5,8 @@ layout: single
 categories:
   - Unity
 tags:
-  - Unity
   - Unity2DGame
+  - 2022
 ---
 
 ### 플레이어의 위치 제한
@@ -33,7 +33,7 @@ tags:
       PlayerPosition.y = 2.8f; // y 좌표가 2.8 이상이면 2.8로 고정
     
     gameObject.transform.position = PlayerPosition; // 미리 작업한 것을 실제 컴포넌트로 수정
-```
+  ```
 
 > gameObject.transform.position : 해당 객체의 위치 정보를 담고 있음
 
@@ -45,11 +45,12 @@ tags:
 > **ViewPort**: 스크린 좌표를 **0에서 1 사이의 비율로 상대적으로 표시**한 좌표계
 
 - 우리가 작업한 게임 화면은 스크린 화면에서 실행된다. 
-이때 좌표는 게임 세상에서 이동하는 World 좌표와 Canvas에서 Width와 Height로 다룰 수 있는 (해상도) 스크린 좌표, 그리고 뷰포트 좌표로 나뉜다.
-앞서 설명한 스크린 좌표계를 사용하면 디스플레이를 확장하거나 축소할 때 원하는 위치에 오브젝트가 존재하지 않게 되는데, 
-이를 뷰포트를 사용하면 해결할 수 있다.
+  이때 좌표는 게임 세상에서 이동하는 World 좌표와 Canvas에서 Width와 Height로 다룰 수 있는 (해상도) 스크린 좌표, 그리고 뷰포트 좌표로 나뉜다.
+  앞서 설명한 스크린 좌표계를 사용하면 디스플레이를 확장하거나 축소할 때 원하는 위치에 오브젝트가 존재하지 않게 되는데, 
+  이를 뷰포트를 사용하면 해결할 수 있다.
 
   
+
 ![ViewPort](/assets/images/ViewPort.png)
 
 - 앞선 화면과 달리 화면이 0부터 1사이로 정규화되었다. x,y의 좌표가 0 이하면 0으로 고정하고 1 이상이면 1로 고정하면 된다. 이러한 방법으로 코드를 작성하면 다음과 같다.
@@ -62,7 +63,7 @@ tags:
       PlayerPosition.x = 0;
   if (PlayerPosition.x > 1)
       PlayerPosition.x = 1;
-
+  
   gameObject.transform.position = Camera.main.ViewportToWorldPoint(
       PlayerPosition); // 뷰포트 좌표를 게임 스크린 좌표로 변환
   ```
@@ -71,7 +72,7 @@ tags:
 
 > 최종적으로 코드를 함수화하여 정리하면
 
-  
+
   ```C#
   void ScreenLimit() // 화면을 제한하는 함수
   {
