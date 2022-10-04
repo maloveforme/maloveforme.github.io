@@ -32,7 +32,7 @@ published: true
 
    - 플레이어가 파괴되거나 목숨이 0이 되면 최고 점수를 저장하고, 특정 키를 누르면 리셋되게 하는 기능
 
-   ![image-20221004142525334](assets/images/2022-10-04-GMSettings4/image-20221004142525334.png)
+   ![image-20221004142525334](/assets/images/2022-10-04-GMSettings4/image-20221004142525334.png)
 
    - 다음 화면과 같이 Canvas 에 Empty를 생성하고, 그 밑에 화면에 표시할 Base를 생성한다. 마지막으로 Base 밑에 Text를 생성한다. 
 
@@ -105,7 +105,7 @@ published: true
 
   <br>
 
-  ![image-20221004150241121](assets/images/2022-10-04-GMSettings4/image-20221004150241121.png)
+  ![image-20221004150241121](/assets/images/2022-10-04-GMSettings4/image-20221004150241121.png)
 
 <br>
 
@@ -151,4 +151,4 @@ published: true
 
 - 최종적으로 Inspector 창에 오브젝트들을 추가해주면 된다.
 
-  ![image-20221004151056276](assets/images/2022-10-04-GMSettings4/image-20221004151056276.png)
+  ![image-20221004151056276](/assets/images/2022-10-04-GMSettings4/image-20221004151056276.png)
