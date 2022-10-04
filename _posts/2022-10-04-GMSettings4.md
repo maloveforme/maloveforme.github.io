@@ -62,9 +62,9 @@ published: true
            } 
            ...
            
-           if(GameManager.instace.PlayerLife == 0)
+           if(GameManager.instance.PlayerLife == 0)
            {
-               GameManager.instace.GameOver();
+               GameManager.instance.GameOver();
            }
        }
        ```
