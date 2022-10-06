@@ -5,7 +5,7 @@ categories:
   - Unity
 tags:
   - Unity2DGame
-  - 2022
+  - '2022'
 ---
 
 ### 해상도 설정하기
@@ -30,6 +30,7 @@ tags:
 ### 플레이어 이동
   1. Scripts 폴더에 Player 스크립트 생성
   2. Player는 중력의 영향을 받지 않는 Kinematics 상태로 설정하고
+
     움직임을 위해 Rigidbody2D, 충돌과 관련된 Collision 컴포넌트 추가
 
   ![Player_Component](/assets/images/2022_Player_Component.png)

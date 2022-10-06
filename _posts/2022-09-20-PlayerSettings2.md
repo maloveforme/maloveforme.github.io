@@ -6,7 +6,7 @@ categories:
   - Unity
 tags:
   - Unity2DGame
-  - 2022
+  - '2022'
 ---
 
 ### 플레이어의 위치 제한
