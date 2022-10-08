@@ -29,9 +29,7 @@ tags:
 
 ### 플레이어 이동
   1. Scripts 폴더에 Player 스크립트 생성
-  2. Player는 중력의 영향을 받지 않는 Kinematics 상태로 설정하고
-
-    움직임을 위해 Rigidbody2D, 충돌과 관련된 Collision 컴포넌트 추가
+  2. Player는 중력의 영향을 받지 않는 Kinematics 상태로 설정하고 움직임을 위해 Rigidbody2D, 충돌과 관련된 Collision 컴포넌트 추가
 
   ![Player_Component](/assets/images/2022_Player_Component.png)
 
@@ -39,7 +37,7 @@ tags:
 
 ### Player의 움직임을 상하좌우로 움직이게 하기 위해 다음과 같은 문법을 차용
 
-  ```C#    
+```C#
   public Rigidbody2D AirCraft;
 
   void Update()
@@ -60,7 +58,7 @@ tags:
       // 플레이어의 속도를 상하좌우(wsad 혹은 방향키)로 설정하여
       // 방향키를 누른 거에 따라 속도가 달라지게 구현
   }
-  ```
+```
 
   + 이때 상하좌우에 대한 정보는 유니티의 Edit -> Project Settings -> Input Manager -> Axes 에서
     조정할 수 있다.  그리고 각 component를 클릭하면 호출하는 키를 알 수 있다.

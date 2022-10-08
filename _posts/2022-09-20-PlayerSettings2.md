@@ -20,7 +20,7 @@ tags:
 
 ![Screen](/assets/images/Screen.png)
 
-  ```C#
+```C#
   Vector3 PlayerPosition = gameObject.transform.position;
 
     if (PlayerPosition.x < -2.8f)
@@ -33,7 +33,7 @@ tags:
       PlayerPosition.y = 2.8f; // y 좌표가 2.8 이상이면 2.8로 고정
     
     gameObject.transform.position = PlayerPosition; // 미리 작업한 것을 실제 컴포넌트로 수정
-  ```
+```
 
 > gameObject.transform.position : 해당 객체의 위치 정보를 담고 있음
 
@@ -72,8 +72,7 @@ tags:
 
 > 최종적으로 코드를 함수화하여 정리하면
 
-
-  ```C#
+```C#
   void ScreenLimit() // 화면을 제한하는 함수
   {
           Vector3 PlayerPosition = Camera.main.WorldToViewportPoint(
@@ -86,4 +85,4 @@ tags:
           gameObject.transform.position = Camera.main.ViewportToWorldPoint(
               PlayerPosition); 
   }
-  ```
+```
