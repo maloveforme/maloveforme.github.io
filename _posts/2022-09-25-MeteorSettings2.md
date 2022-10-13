@@ -24,7 +24,7 @@ tags:
 ---
 
 **2. 이제 프리팹이된 운석을 스크립트 창에서 다뤄보자.**
-```C#
+```csharp
 [SerializeField] GameObject PfMeteor;
 // 프리팹화된 메테오 선언
 ...
@@ -63,7 +63,7 @@ void MakeMeteor() // 운석 생성
 - 2번까지 마치고 게임을 실행하면 무수히 많은 운석 클론이 생성되어 메모리를 많이 잡아먹을 것이다.
 - 이를 해결하기 위해 일정 시간이 지났을 때 운석 클론이 삭제되는 코드를 구현해보자.
 
-```C#
+```csharp
 
 float TimeCurrent = 0, TimeLimit = 2f;
 // 현재 시간을 표현하는 TimeCurrent, 삭제할 시간을 정하는 TimeLimit 선언

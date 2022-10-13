@@ -25,7 +25,7 @@ tags:
 
 3. 총알의 속도를 지정해주고, 운석과 마찬가지로 시간이 지나면 사라지게 설정해준다.
 
-```C#
+```csharp
 
 void Start()
 {
@@ -47,7 +47,7 @@ void Update()
 
 4. 그리고 운석과 충돌했을 때 운석과 총알 모두 사라지게 설정한다. 이때 이름을 비교하는 것이 아닌 Tag를 비교한다.
 
-```C#
+```csharp
 
 private void OnTriggerEnter2D(Collider2D collision)
 {
@@ -73,7 +73,7 @@ private void OnTriggerEnter2D(Collider2D collision)
 
 3. 플레이어가 특정 버튼을 눌렀을 때 총알이 나가야 하므로 플레이어 스크립트에서 GameObject를 생성해 구현해준다.
 
-```C#
+```csharp
 [SerializeField] GameObject PfBullet;
 ...
 

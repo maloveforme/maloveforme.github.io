@@ -37,7 +37,7 @@ tags:
 
 ### Player의 움직임을 상하좌우로 움직이게 하기 위해 다음과 같은 문법을 차용
 
-```C#
+```csharp
   public Rigidbody2D AirCraft;
 
   void Update()

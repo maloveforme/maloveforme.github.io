@@ -24,7 +24,7 @@ published: true
 - 지난 포스트 때 바닥에 한 번 떨어지면 생명이 더이상 감소하지 않는 문제가 있었다. 이는 운석이 바닥에 닿았을 때 setActive(false)로 인해 바닥이 사라져버려 그런 것이었다.
 - 따라서 운석(Meteor) 스크립트의 다음 코드를 변경해주었다.
 
-```C#
+```csharp
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -71,7 +71,7 @@ published: true
 
    - GameManager Script
 
-     ```C#
+     ```csharp
      ...
      public Text Scoreboard;
      public int Score = 0;
@@ -85,7 +85,7 @@ published: true
 
    - Bullet Script
 
-     ```C#
+     ```csharp
      ...
      
          private void OnTriggerEnter2D(Collider2D collision)

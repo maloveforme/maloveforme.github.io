@@ -20,7 +20,7 @@ tags:
 
 ![Screen](/assets/images/Screen.png)
 
-```C#
+```csharp
   Vector3 PlayerPosition = gameObject.transform.position;
 
     if (PlayerPosition.x < -2.8f)
@@ -55,7 +55,7 @@ tags:
 
 - 앞선 화면과 달리 화면이 0부터 1사이로 정규화되었다. x,y의 좌표가 0 이하면 0으로 고정하고 1 이상이면 1로 고정하면 된다. 이러한 방법으로 코드를 작성하면 다음과 같다.
 
-  ```C#
+  ```csharp
   Vector3 PlayerPosition = Camera.main.WorldToViewportPoint(
       gameObject.transform.position); // 뷰포트 사용.
   // 스크린을 결국 카메라를 통해 이루어지므로 Camera.main(메인카메라)을 사용
@@ -72,7 +72,7 @@ tags:
 
 > 최종적으로 코드를 함수화하여 정리하면
 
-```C#
+```csharp
   void ScreenLimit() // 화면을 제한하는 함수
   {
           Vector3 PlayerPosition = Camera.main.WorldToViewportPoint(

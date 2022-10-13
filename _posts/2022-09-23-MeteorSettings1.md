@@ -40,7 +40,7 @@ tags:
 
 - 운석이 +y - > -y 방향으로 떨어지고, 속도가 한 번만 주어지면 계속 떨어지기 떄문에 다음과 같이 구현한다.
 
-```C#
+```csharp
 public Rigidbody2D RbMeteor; // Rigidbody 2D 선언, Inspector에서 다루기 위해 public으로 선언
 float speed = 6.5f; // 속도
 
@@ -64,7 +64,7 @@ void Movement() // 운석의 움직임
 
 - 운석이 물체랑 부딪혔을 때 플레이어는 파괴되고, 운석은 폭발하는 애니메이션(추후에 애니메이션으로 처리)과 함께 사라지게 구현해야하므로 Trigger충돌을 구현해보자. 파괴를 구현할 때는 직접 파괴하는 함수 Destroy()와 오브젝트를 비활성화하는 방법이 있는데, Destroy()는 오류가 많으므로 후자를 구현해보겠다. 물체와 부딪히는 순간을 비교하기 위해 OnTriggerEnter2D()함수를 사용하여,
 
-```C#
+```csharp
  private void OnTriggerEnter2D(Collider2D collision)
 {
     if (collision.CompareTag("Player")) // Meteor와 충돌한 대상의 Tag가 Player면
