@@ -5,7 +5,6 @@ layout: single
 categories:
   - Unity
 tags:
-  - Unity2DGame
   - '2022'
 ---
 ### Asset Store 이용
