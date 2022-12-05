@@ -15,7 +15,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/Cpp" class="">Cpp ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Cpp" class="">C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -36,7 +36,16 @@
                         <li><a href="/categories/DM" class="">Discrete Math ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>             
+            </ul>      
+            
+        <span class="nav__sub-title">Algorithm</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "BOJ" %}
+                    <li><a href="/categories/BOJ" class="">백준 with C++({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>          
       </li>
   </ul>
 </nav>
