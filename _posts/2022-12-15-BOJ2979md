@@ -19,27 +19,109 @@ published: false
 
 ### 문제 설명
 
-
+![image-20221218143252001](/assets/images/2022-12-15-BOJ2979md/image-20221218143252001.png)
 
 <br>
 
 ### 입출력 예제
 
-
+![image-20221218143306480](/assets/images/2022-12-15-BOJ2979md/image-20221218143306480.png)
 
 <br>
 
 ### 풀이
 
 ```cpp
+#include <iostream>
+using namespace std;
 
+int main()
+{
+	int A, B, C;
+	cin >> A >> B >> C;
+
+	int in, out;
+    int ary[101] = {0};
+
+	for (int i = 0; i < 3; i++)
+    {
+        cin >> in >> out;
+        
+        for (int j = in; j < out; j++)
+            ary[j]++;
+    }
+
+	int sum = 0;
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (ary[i] == 1)
+			sum += A;
+
+		else if (ary[i] == 2)
+			sum += (B * 2);
+
+		else if (ary[i] == 3)
+			sum += (C * 3);
+	}
+
+	cout << sum;
+}
 ```
 
 - 개념
 
+  - 언뜻보면 이해하기 난해하지만, 쉽게 생각하면 주차를 시작한 최소 시간과 마지막 시간 사이에 트럭이 몇 대 있냐를 따져보면 되는 문제다.
+
+  - 예제 입력 1을 기준으로 문제를 풀어보면 다음과 같다.
+
+    ![image-20221218144029826](/assets/images/2022-12-15-BOJ2979md/image-20221218144029826.png)
+
 - 알고리즘
 
+  ```cpp
+  int A, B, C;
+  cin >> A >> B >> C;
+  
+  int in, out;
+  int ary[101] = {0};
+  ```
 
+  - 주차 요금 A, B, C, 들어온 시간과 나온 시간 in, out, 그리고 해당하는 시간대를 나타낼 ary 를 선언한다.
+
+  ```cpp
+  for (int i = 0; i < 3; i++)
+  {
+      cin >> in >> out;
+  
+      for (int j = in; j < out; j++)
+          ary[j]++;
+  }
+  ```
+
+  - 들어온 시간 in과 나간 시간 out을 입력받고, 해당 시간대를 반복문을 한 번 더 돌려준다.
+
+  ```cpp
+  int sum = 0;
+  
+  for (int i = 0; i < 100; i++)
+  {
+      if (ary[i] == 1)
+          sum += A;
+  
+      else if (ary[i] == 2)
+          sum += (B * 2);
+  
+      else if (ary[i] == 3)
+          sum += (C * 3);
+  }
+  ```
+
+  - 요금을 나타낼 변수 sum을 선언한다.
+  - 이제 배열을 하나씩 확인하자.
+    - 배열의 원소가 1이면 1대만 있으므로 A원씩 더한다.
+    - 배열의 원소가 2면 2대가 있는 것이므로 B원을 대수만큼 곱해서 더한다.
+    - 배열의 원소가 3이면 3대가 있는 것이므로 C원을 대수만큼 곱해서 더한다.
 
 ---
 
