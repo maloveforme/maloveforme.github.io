@@ -86,5 +86,5 @@ void Update()
 
 > Time.deltaTime: 1/초당프레임 -> 컴퓨터 사양에 구애받지 않고 시간을 다루기 위해 사용
 
-![deltatime](/assets/images/2022_time_deltatime.png)
+![deltatime](../assets/images/2022_time_deltatime.png)
 
